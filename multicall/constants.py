@@ -7,7 +7,7 @@ class Network(IntEnum):
     Rinkeby = 4
     Görli = 5
     xDai = 100
-    BSC = 56
+    Bsc = 56
 
 
 MULTICALL_ADDRESSES = {
