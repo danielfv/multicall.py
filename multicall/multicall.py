@@ -22,7 +22,7 @@ class Multicall:
             None,
             self.w3
         )
-        args = [[[call.target, call.data] for call in self.calls]]
+        args = [ [[call.target, call.data] for call in self.calls], True ]
         block, outputs = aggregate(args)
         result = {}
         for call, output in zip(self.calls, outputs):
