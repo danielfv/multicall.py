@@ -18,7 +18,7 @@ class Multicall:
     def __call__(self):
         aggregate = Call(
             MULTICALL_ADDRESSES[self.w3.eth.chainId],
-            'aggregate((address,bytes)[],bool)(uint256,bytes[])',
+            'aggregate((address,bytes)[],bool)(uint256,(bool,bytes)[])',
             None,
             self.w3
         )
